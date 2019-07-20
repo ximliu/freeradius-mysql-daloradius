@@ -1,4 +1,5 @@
 #!/bin/bash
+chown -R mysql:mysql /var/lib/mysql /var/run/mysqld
 service mysql start
 
 mysql -u root --password=$MYSQLTMPROOT -e \
