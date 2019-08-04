@@ -25,7 +25,7 @@ RUN wget http://liquidtelecom.dl.sourceforge.net/project/daloradius/daloradius/d
  	chown -R www-data:www-data /var/www/daloradius && \
 	chmod 644 /var/www/daloradius/library/daloradius.conf.php && \
 	rm /etc/nginx/sites-enabled/default
-	ln -s /usr/share/phpmyadmin /var/www/html
+	sudo ln -s /usr/share/phpmyadmin /var/www/html
 
 #	cp -R /var/www/daloradius/contrib/chilli/portal2/hotspotlogin /var/www/daloradius
 
