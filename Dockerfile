@@ -7,7 +7,7 @@ ENV MYSQLTMPROOT toor
 RUN echo mysql-server mysql-server/root_password password $MYSQLTMPROOT | debconf-set-selections;\
   echo mysql-server mysql-server/root_password_again password $MYSQLTMPROOT | debconf-set-selections;\
   apt-get update && apt-get install -y mysql-server mysql-client libmysqlclient-dev \
-  nginx php php-common php-gd php-curl php-mail php-mail-mime php-pear php-db php-mysqlnd phpmyadmin tar \
+  nginx php php-common php-gd php-curl php-mail php-mail-mime php-pear php-db php-mysqlnd tar \
   freeradius freeradius-mysql freeradius-utils \
   wget unzip && \
   pear install DB && \
