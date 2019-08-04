@@ -34,7 +34,7 @@ COPY etc/nginx/radius.conf /etc/nginx/sites-enabled/
 		
 
 	
-EXPOSE 1812 1813 3361
+EXPOSE 1812 1813 80
 
 ENTRYPOINT ["/init.sh"]
 
