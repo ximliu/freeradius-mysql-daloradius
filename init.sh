@@ -1,8 +1,4 @@
 #!/bin/bash
-cd /var/www
-sudo wget https://files.phpmyadmin.net/phpMyAdmin/4.7.7/phpMyAdmin-4.7.7-all-languages.zip 
-unzip phpMyAdmin-4.7.7-all-languages.zip 
-mv phpMyAdmin-4.7.7-all-languages phpmyadmin
 chown -R mysql:mysql /var/lib/mysql /var/run/mysqld
 service mysql start
 
